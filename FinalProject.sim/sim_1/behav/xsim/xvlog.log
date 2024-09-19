@@ -1,0 +1,12 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "X:/EC311/FinalProject/FinalProject.srcs/sources_1/new/backandforth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module backandforth
+INFO: [VRFC 10-2263] Analyzing Verilog file "X:/EC311/FinalProject/FinalProject.srcs/sources_1/new/backandforth_divided.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module backandforth_divided
+INFO: [VRFC 10-2263] Analyzing Verilog file "X:/EC311/FinalProject/FinalProject.srcs/sources_1/new/backandforth_input.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module backandforth_input
+INFO: [VRFC 10-2263] Analyzing Verilog file "X:/EC311/FinalProject/FinalProject.srcs/sources_1/new/debouncer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debouncer
+INFO: [VRFC 10-2263] Analyzing Verilog file "X:/EC311/FinalProject/FinalProject.srcs/sources_1/new/variable_clock_delay.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module variable_clock_delay
+INFO: [VRFC 10-2263] Analyzing Verilog file "X:/EC311/FinalProject/FinalProject.srcs/sim_1/new/backandforth_input_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module backandforth_input_test

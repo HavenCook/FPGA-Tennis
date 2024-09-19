@@ -1,0 +1,32 @@
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L secureip --snapshot backandforth_input_test_func_impl xil_defaultlib.backandforth_input_test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.x_lut1_mux2
+Compiling module unisims_ver.LUT1
+Compiling module unisims_ver.LUT6
+Compiling module unisims_ver.LUT5(INIT=32'b111111111111111111...
+Compiling module unisims_ver.LUT4
+Compiling module unisims_ver.FDCE_default
+Compiling module unisims_ver.FDRE_default
+Compiling module xil_defaultlib.backandforth
+Compiling module unisims_ver.CARRY4
+Compiling module unisims_ver.x_lut3_mux8
+Compiling module unisims_ver.LUT3
+Compiling module unisims_ver.x_lut2_mux4
+Compiling module unisims_ver.LUT2
+Compiling module xil_defaultlib.variable_clock_delay
+Compiling module xil_defaultlib.backandforth_divided
+Compiling module unisims_ver.BUFG
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.OBUF
+Compiling module xil_defaultlib.backandforth_input
+Compiling module xil_defaultlib.backandforth_input_test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot backandforth_input_test_func_impl

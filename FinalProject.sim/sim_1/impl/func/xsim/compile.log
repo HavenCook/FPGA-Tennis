@@ -1,0 +1,9 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "X:/EC311/FinalProject/FinalProject.sim/sim_1/impl/func/xsim/backandforth_input_test_func_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module backandforth
+INFO: [VRFC 10-311] analyzing module backandforth_divided
+INFO: [VRFC 10-311] analyzing module backandforth_input
+INFO: [VRFC 10-311] analyzing module variable_clock_delay
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "X:/EC311/FinalProject/FinalProject.srcs/sim_1/new/backandforth_input_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module backandforth_input_test
+WARNING: [VRFC 10-1771] potential always loop found [X:/EC311/FinalProject/FinalProject.srcs/sim_1/new/backandforth_input_test.v:43]

@@ -1,0 +1,14 @@
+0.7
+2020.2
+Oct 14 2022
+05:20:55
+X:/EC311/FinalProject/FinalProject.sim/sim_1/behav/xsim/glbl.v,1665704903,verilog,,,,glbl,,,,,,,,
+X:/EC311/FinalProject/FinalProject.srcs/sim_1/new/backandforth_input_test.v,1682518516,verilog,,,,backandforth_input_test,,,,,,,,
+X:/EC311/FinalProject/FinalProject.srcs/sim_1/new/backandforth_sim.v,1682200709,verilog,,,,backandforth_sim,,,,,,,,
+X:/EC311/FinalProject/FinalProject.srcs/sim_1/new/debouncer_sim.v,1682515918,verilog,,,,debouncer_sim,,,,,,,,
+X:/EC311/FinalProject/FinalProject.srcs/sources_1/new/backandforth.v,1682514715,verilog,,X:/EC311/FinalProject/FinalProject.srcs/sources_1/new/backandforth_divided.v,,backandforth,,,,,,,,
+X:/EC311/FinalProject/FinalProject.srcs/sources_1/new/backandforth_divided.v,1682514793,verilog,,X:/EC311/FinalProject/FinalProject.srcs/sources_1/new/backandforth_input.v,,backandforth_divided,,,,,,,,
+X:/EC311/FinalProject/FinalProject.srcs/sources_1/new/backandforth_input.v,1682519365,verilog,,X:/EC311/FinalProject/FinalProject.srcs/sources_1/new/debouncer.v,,backandforth_input,,,,,,,,
+X:/EC311/FinalProject/FinalProject.srcs/sources_1/new/debouncer.v,1682516238,verilog,,X:/EC311/FinalProject/FinalProject.srcs/sources_1/new/variable_clock_delay.v,,debouncer,,,,,,,,
+X:/EC311/FinalProject/FinalProject.srcs/sources_1/new/decoder.v,1682184731,verilog,,X:/EC311/FinalProject/FinalProject.srcs/sources_1/new/variable_clock_delay.v,,decoder,,,,,,,,
+X:/EC311/FinalProject/FinalProject.srcs/sources_1/new/variable_clock_delay.v,1682204376,verilog,,X:/EC311/FinalProject/FinalProject.srcs/sim_1/new/backandforth_input_test.v,,variable_clock_delay,,,,,,,,

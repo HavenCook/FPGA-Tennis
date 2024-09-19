@@ -1,0 +1,338 @@
+
+*** Running vivado
+    with args -log toplevel.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source toplevel.tcl
+
+
+
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source toplevel.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1001.656 ; gain = 117.871
+Command: read_checkpoint -auto_incremental -incremental X:/EC311/FinalProject/FinalProject.srcs/utils_1/imports/synth_1/backandforth_divided.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from X:/EC311/FinalProject/FinalProject.srcs/utils_1/imports/synth_1/backandforth_divided.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top toplevel -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 35752
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [D:/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 1827.973 ; gain = 407.602
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'toplevel' [X:/EC311/FinalProject/FinalProject.srcs/sources_1/new/toplevel.v:23]
+INFO: [Synth 8-6157] synthesizing module 'debounced_input_output' [X:/EC311/FinalProject/FinalProject.srcs/sources_1/new/debounced_input_output.v:23]
+INFO: [Synth 8-6157] synthesizing module 'backandforth_input' [X:/EC311/FinalProject/FinalProject.srcs/sources_1/new/backandforth_input.v:23]
+INFO: [Synth 8-6157] synthesizing module 'backandforth_divided' [X:/EC311/FinalProject/FinalProject.srcs/sources_1/new/backandforth_divided.v:23]
+INFO: [Synth 8-6157] synthesizing module 'variable_clock_delay' [X:/EC311/FinalProject/FinalProject.srcs/sources_1/new/variable_clock_delay.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'variable_clock_delay' (0#1) [X:/EC311/FinalProject/FinalProject.srcs/sources_1/new/variable_clock_delay.v:23]
+INFO: [Synth 8-6157] synthesizing module 'backandforth' [X:/EC311/FinalProject/FinalProject.srcs/sources_1/new/backandforth.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'backandforth' (0#1) [X:/EC311/FinalProject/FinalProject.srcs/sources_1/new/backandforth.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'backandforth_divided' (0#1) [X:/EC311/FinalProject/FinalProject.srcs/sources_1/new/backandforth_divided.v:23]
+INFO: [Synth 8-6157] synthesizing module 'debouncer' [X:/EC311/FinalProject/FinalProject.srcs/sources_1/new/debouncer.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'debouncer' (0#1) [X:/EC311/FinalProject/FinalProject.srcs/sources_1/new/debouncer.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'backandforth_input' (0#1) [X:/EC311/FinalProject/FinalProject.srcs/sources_1/new/backandforth_input.v:23]
+INFO: [Synth 8-6157] synthesizing module 'SevenSegmentLED' [X:/EC311/FinalProject/SevenSegmentLED.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'SevenSegmentLED' (0#1) [X:/EC311/FinalProject/SevenSegmentLED.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'debounced_input_output' (0#1) [X:/EC311/FinalProject/FinalProject.srcs/sources_1/new/debounced_input_output.v:23]
+INFO: [Synth 8-6157] synthesizing module 'debounced_squash_io' [X:/EC311/FinalProject/FinalProject.srcs/sources_1/new/debounced_squash_io.v:23]
+INFO: [Synth 8-6157] synthesizing module 'squash_input' [X:/EC311/FinalProject/FinalProject.srcs/sources_1/new/squash_input.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'squash_input' (0#1) [X:/EC311/FinalProject/FinalProject.srcs/sources_1/new/squash_input.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'debounced_squash_io' (0#1) [X:/EC311/FinalProject/FinalProject.srcs/sources_1/new/debounced_squash_io.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'toplevel' (0#1) [X:/EC311/FinalProject/FinalProject.srcs/sources_1/new/toplevel.v:23]
+WARNING: [Synth 8-7137] Register Qprev_reg in module backandforth has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [X:/EC311/FinalProject/FinalProject.srcs/sources_1/new/backandforth.v:37]
+WARNING: [Synth 8-6014] Unused sequential element Qprev_reg was removed.  [X:/EC311/FinalProject/FinalProject.srcs/sources_1/new/backandforth_input.v:54]
+WARNING: [Synth 8-7137] Register outpstateprev_reg in module backandforth_input has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [X:/EC311/FinalProject/FinalProject.srcs/sources_1/new/backandforth_input.v:56]
+WARNING: [Synth 8-7137] Register outpstate_reg in module backandforth_input has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [X:/EC311/FinalProject/FinalProject.srcs/sources_1/new/backandforth_input.v:56]
+WARNING: [Synth 8-7137] Register ssponescore_reg in module debounced_input_output has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [X:/EC311/FinalProject/FinalProject.srcs/sources_1/new/debounced_input_output.v:55]
+WARNING: [Synth 8-7137] Register ssptwoscore_reg in module debounced_input_output has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [X:/EC311/FinalProject/FinalProject.srcs/sources_1/new/debounced_input_output.v:61]
+WARNING: [Synth 8-7137] Register ssponepenalty_reg in module debounced_input_output has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [X:/EC311/FinalProject/FinalProject.srcs/sources_1/new/debounced_input_output.v:67]
+WARNING: [Synth 8-7137] Register ssptwopenalty_reg in module debounced_input_output has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [X:/EC311/FinalProject/FinalProject.srcs/sources_1/new/debounced_input_output.v:73]
+WARNING: [Synth 8-6014] Unused sequential element Qprev_reg was removed.  [X:/EC311/FinalProject/FinalProject.srcs/sources_1/new/squash_input.v:49]
+WARNING: [Synth 8-6014] Unused sequential element server_reg was removed.  [X:/EC311/FinalProject/FinalProject.srcs/sources_1/new/squash_input.v:73]
+WARNING: [Synth 8-7137] Register outpstateprev_reg in module squash_input has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [X:/EC311/FinalProject/FinalProject.srcs/sources_1/new/squash_input.v:51]
+WARNING: [Synth 8-7137] Register outpstate_reg in module squash_input has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [X:/EC311/FinalProject/FinalProject.srcs/sources_1/new/squash_input.v:51]
+WARNING: [Synth 8-3848] Net w2 in module/entity squash_input does not have driver. [X:/EC311/FinalProject/FinalProject.srcs/sources_1/new/squash_input.v:38]
+WARNING: [Synth 8-7137] Register ssponescore0_reg in module debounced_squash_io has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [X:/EC311/FinalProject/FinalProject.srcs/sources_1/new/debounced_squash_io.v:53]
+WARNING: [Synth 8-7137] Register ssponescore1_reg in module debounced_squash_io has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [X:/EC311/FinalProject/FinalProject.srcs/sources_1/new/debounced_squash_io.v:71]
+WARNING: [Synth 8-7137] Register ssponescore2_reg in module debounced_squash_io has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [X:/EC311/FinalProject/FinalProject.srcs/sources_1/new/debounced_squash_io.v:89]
+WARNING: [Synth 8-7137] Register ssponepenalty_reg in module debounced_squash_io has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [X:/EC311/FinalProject/FinalProject.srcs/sources_1/new/debounced_squash_io.v:107]
+WARNING: [Synth 8-7137] Register toggleQprev_reg in module toplevel has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [X:/EC311/FinalProject/FinalProject.srcs/sources_1/new/toplevel.v:49]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:29 . Memory (MB): peak = 1923.348 ; gain = 502.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:29 . Memory (MB): peak = 1923.348 ; gain = 502.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:29 . Memory (MB): peak = 1923.348 ; gain = 502.977
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 1923.348 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [X:/EC311/FinalProject/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [X:/EC311/FinalProject/Nexys4DDR_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [X:/EC311/FinalProject/Nexys4DDR_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/toplevel_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/toplevel_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2011.949 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.114 . Memory (MB): peak = 2011.949 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [D:/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:58 . Memory (MB): peak = 2011.949 ; gain = 591.578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:58 . Memory (MB): peak = 2011.949 ; gain = 591.578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:59 . Memory (MB): peak = 2011.949 ; gain = 591.578
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'Q_reg' in module 'backandforth_input'
+INFO: [Synth 8-802] inferred FSM for state register 'Q_reg' in module 'squash_input'
+WARNING: [Synth 8-327] inferring latch for variable 'deb_count_reg' [X:/EC311/FinalProject/FinalProject.srcs/sources_1/new/debouncer.v:52]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE4 |                              000 |                              000
+*
+                 iSTATE5 |                              001 |                              010
+                 iSTATE0 |                              010 |                              100
+                 iSTATE3 |                              011 |                              001
+                  iSTATE |                              100 |                              011
+                 iSTATE1 |                              101 |                              101
+                 iSTATE2 |                              110 |                              110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'Q_reg' using encoding 'sequential' in module 'backandforth_input'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE3 |                              000 |                              000
+*
+                 iSTATE4 |                              001 |                              010
+                  iSTATE |                              010 |                              100
+                 iSTATE0 |                              011 |                              011
+                 iSTATE1 |                              100 |                              101
+                 iSTATE2 |                              101 |                              110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'Q_reg' using encoding 'sequential' in module 'squash_input'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:01:18 . Memory (MB): peak = 2011.949 ; gain = 591.578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   25 Bit       Adders := 2     
+	   2 Input   22 Bit       Adders := 3     
+	   2 Input   17 Bit       Adders := 2     
+	   2 Input   12 Bit       Adders := 1     
+	   2 Input    6 Bit       Adders := 2     
+	   2 Input    4 Bit       Adders := 2     
+	   2 Input    3 Bit       Adders := 2     
+	   2 Input    2 Bit       Adders := 5     
++---Registers : 
+	               56 Bit    Registers := 2     
+	               25 Bit    Registers := 2     
+	               22 Bit    Registers := 3     
+	               17 Bit    Registers := 2     
+	               16 Bit    Registers := 6     
+	               12 Bit    Registers := 1     
+	                8 Bit    Registers := 4     
+	                7 Bit    Registers := 10    
+	                6 Bit    Registers := 2     
+	                4 Bit    Registers := 4     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 8     
+	                1 Bit    Registers := 10    
++---Muxes : 
+	   2 Input   56 Bit        Muxes := 2     
+	   2 Input   25 Bit        Muxes := 2     
+	   2 Input   17 Bit        Muxes := 2     
+	   2 Input   16 Bit        Muxes := 1     
+	   6 Input   12 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 3     
+	   4 Input    7 Bit        Muxes := 5     
+	   2 Input    7 Bit        Muxes := 1     
+	   7 Input    6 Bit        Muxes := 1     
+	   6 Input    6 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 4     
+	   3 Input    4 Bit        Muxes := 2     
+	   7 Input    3 Bit        Muxes := 1     
+	  27 Input    3 Bit        Muxes := 1     
+	   6 Input    3 Bit        Muxes := 2     
+	   2 Input    3 Bit        Muxes := 8     
+	   2 Input    2 Bit        Muxes := 9     
+	   7 Input    2 Bit        Muxes := 6     
+	   6 Input    2 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 20    
+	   3 Input    1 Bit        Muxes := 2     
+	   7 Input    1 Bit        Muxes := 9     
+	   6 Input    1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:01:51 . Memory (MB): peak = 2011.949 ; gain = 591.578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:01:57 . Memory (MB): peak = 2011.949 ; gain = 591.578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:01:59 . Memory (MB): peak = 2011.949 ; gain = 591.578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:27 ; elapsed = 00:02:00 . Memory (MB): peak = 2011.949 ; gain = 591.578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:31 ; elapsed = 00:02:05 . Memory (MB): peak = 2011.949 ; gain = 591.578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:31 ; elapsed = 00:02:05 . Memory (MB): peak = 2011.949 ; gain = 591.578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:31 ; elapsed = 00:02:06 . Memory (MB): peak = 2011.949 ; gain = 591.578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:31 ; elapsed = 00:02:06 . Memory (MB): peak = 2011.949 ; gain = 591.578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:02:06 . Memory (MB): peak = 2011.949 ; gain = 591.578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:32 ; elapsed = 00:02:06 . Memory (MB): peak = 2011.949 ; gain = 591.578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    57|
+|3     |LUT1   |    13|
+|4     |LUT2   |   151|
+|5     |LUT3   |    44|
+|6     |LUT4   |   115|
+|7     |LUT5   |    51|
+|8     |LUT6   |   130|
+|9     |MUXF7  |     4|
+|10    |FDCE   |   249|
+|11    |FDPE   |     8|
+|12    |FDRE   |   197|
+|13    |LDC    |    66|
+|14    |IBUF   |     5|
+|15    |OBUF   |    31|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:32 ; elapsed = 00:02:07 . Memory (MB): peak = 2011.949 ; gain = 591.578
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:01:59 . Memory (MB): peak = 2011.949 ; gain = 502.977
+Synthesis Optimization Complete : Time (s): cpu = 00:00:32 ; elapsed = 00:02:07 . Memory (MB): peak = 2011.949 ; gain = 591.578
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 2011.949 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 127 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2011.949 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 66 instances were transformed.
+  LDC => LDCE: 66 instances
+
+Synth Design complete, checksum: cd0be198
+INFO: [Common 17-83] Releasing license: Synthesis
+47 Infos, 20 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:37 ; elapsed = 00:02:52 . Memory (MB): peak = 2011.949 ; gain = 985.457
+INFO: [Common 17-1381] The checkpoint 'X:/EC311/FinalProject/FinalProject.runs/synth_1/toplevel.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:00 ; elapsed = 00:00:16 . Memory (MB): peak = 2011.949 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_utilization -file toplevel_utilization_synth.rpt -pb toplevel_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Jun 18 14:45:53 2023...
